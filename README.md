@@ -1,23 +1,10 @@
-# task
-1. Assignment in React
 
 
-Installation:
-To Install-- node js --> refer this link --https://nodejs.org/en/download
-Create React App tool:
--------npx create-react-app my-app
-Navigate to the new project directory by typing:
--------cd my-app
-Start the development server by typing:
--------npm start
-You can refer to this Youtube link for Creating Reactjs Project --- https://youtu.be/av5fmpgEJSU
-TASK
 --------------------------
 Recipe Application
 --------------------------
-
-
-
+ You can refer to this Youtube link for Creating Reactjs Project-https://youtu.be/av5fmpgEJSU
+ 
 Steps:
 1. Set up your development environment. Install Node.js and create a new React project using
 create-react-app.
