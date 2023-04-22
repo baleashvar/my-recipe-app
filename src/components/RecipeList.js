@@ -47,7 +47,7 @@ const RecipeList = ({ reciepe }) => {
       </form>
       <ul>
         {filteredRecipes.map((recipe) => (
-          <Recipie value={recipe} />))}
+          <Recipie key={recipe.name} value={recipe} />))}
       </ul>
     </div>
   );
