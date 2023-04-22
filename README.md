@@ -1,3 +1,41 @@
+# task
+1. Assignment in React
+
+
+Installation:
+To Install-- node js --> refer this link --https://nodejs.org/en/download
+Create React App tool:
+-------npx create-react-app my-app
+Navigate to the new project directory by typing:
+-------cd my-app
+Start the development server by typing:
+-------npm start
+You can refer to this Youtube link for Creating Reactjs Project --- https://youtu.be/av5fmpgEJSU
+TASK
+--------------------------
+Recipe Application
+--------------------------
+
+
+
+Steps:
+1. Set up your development environment. Install Node.js and create a new React project using
+create-react-app.
+2. Create a new component called RecipeList. This component will render a list of recipes.
+3. Create a state variable called recipes, which will store an array of recipe objects. Initialize
+this array with some sample data.
+4. Loop through the recipes array and render a Recipe component for each item. Each Recipe
+component should display the name, image, and description of the recipe.
+5. Add a form to the Recipe List component that allows the user to filter the list of recipes
+based on specific criteria such as meal type or dietary restrictions. Use a select element and
+options to allow the user to select the criteria.
+6. Use the use State hook to manage the selected criteria state.
+7. Filter the recipes array based on the selected criteria and render the filtered list of recipes.
+8. Add a search bar to the Recipe List component that allows the user to search for recipes by
+keyword. Use the state hook to manage the search keyword state.
+9. Filter the recipes array based on the search keyword and render the filtered list of recipes.
+10. Add some basic stylings to your application using CSS.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
