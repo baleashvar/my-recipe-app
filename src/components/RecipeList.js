@@ -4,7 +4,6 @@ import Recipie from "./Recipie";
 const RecipeList = ({ reciepe }) => {
   const [filter, setFilter] = useState("");
   const [searchKeyword, setSearchKeyword] = useState("");
-
   const handleFilterChange = (event) => {
     setFilter(event.target.value);
   };
@@ -14,9 +13,15 @@ const RecipeList = ({ reciepe }) => {
   };
 
   const filteredRecipes = reciepe.filter((recipe) => {
+
+    if (filter === "vegetarian" || filter==="non-veg"){
+      return recipe.dietaryRestrictions.includes(filter)
+    }
+
     if (filter) {
       return recipe.mealType === filter;
     }
+
     if (searchKeyword) {
       return recipe.name.toLowerCase().includes(searchKeyword.toLowerCase());
     }
@@ -26,6 +31,7 @@ const RecipeList = ({ reciepe }) => {
 
   return (
     <div>
+      <div className="form">
       <form>
         <label htmlFor="criteria">Filter by:</label>
         <select id="criteria" onChange={handleFilterChange}>
@@ -33,7 +39,8 @@ const RecipeList = ({ reciepe }) => {
           <option value="breakfast">Breakfast</option>
           <option value="lunch">Lunch</option>
           <option value="dinner">Dinner</option>
-          <option value="snack">Snack</option>
+          <option value="vegetarian">vegetarian</option>
+          <option value="non-veg">non-veg</option>
         </select>
       </form>
       <form>
@@ -45,10 +52,11 @@ const RecipeList = ({ reciepe }) => {
           onChange={handleSearchChange}
         />
       </form>
-      <ul>
+      </div>
+        <div className="recipe-container">
         {filteredRecipes.map((recipe) => (
           <Recipie key={recipe.name} value={recipe} />))}
-      </ul>
+        </div>
     </div>
   );
 };

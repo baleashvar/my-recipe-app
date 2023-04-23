@@ -8,12 +8,12 @@ import Typography from '@mui/material/Typography';
 
 function Recipie({value}) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ width: 340 }}>
     <CardMedia
       component="img"
-      alt="green iguana"
+      alt={value.name}
       height="140"
-      image={value.image} 
+      image={value.image}   
     />
     <CardContent>
       <Typography gutterBottom variant="h5" component="div">

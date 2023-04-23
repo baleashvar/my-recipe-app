@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+.recipe-container{
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap :20px;
+}
+
+.App{
+  padding: 20px;
+  background-color: rgb(199, 199, 199) ;
+  min-height: 100vh;
+}
+
+.form {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  gap :20px;
+  padding: 0px 40px 40px 40px ;
+}
+
+body
+{
+  /* background-color: rgb(128, 172, 189); */
+  font-family:serif;
+  font-size: larger;
+  /* background-image:linear-gradient(to bottom right,#3fcee7,#ffffff); */
+}
+
+.Header {
+  padding:0px 0px 0px 200px;
+  background-color: white;
+}
+
+span {
+  color: rgb(201, 3, 3);
+}
