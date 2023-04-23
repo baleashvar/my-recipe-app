@@ -3,6 +3,8 @@
 --------------------------
 # Recipe Application
 --------------------------
+![Alt text](./src/assets/screenshot.png)
+
  You can refer to this Youtube link for Creating Reactjs Project-https://youtu.be/av5fmpgEJSU
 
 Steps:
