@@ -35,7 +35,7 @@ const RecipeList = ({ reciepe }) => {
       <form>
         <label htmlFor="criteria">Filter by:</label>
         <select id="criteria" onChange={handleFilterChange}>
-          <option value="">All Reciepes</option>
+          <option value="">All Recipes</option>
           <option value="breakfast">Breakfast</option>
           <option value="lunch">Lunch</option>
           <option value="dinner">Dinner</option>
